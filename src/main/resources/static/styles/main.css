@@ -1,4 +1,9 @@
-body {
-  background-color: #d15b5b;
-  font-family: Arial;
+body /deep/ * {
+  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px; }
+body /deep/ core-toolbar {
+  background-color: #10a4cd;
+  color: #fff;
+  height: 40px; }
+  body /deep/ core-toolbar /deep/ .toolbar-tools {
+    height: 40px; }
