@@ -1,19 +1,59 @@
+html,body {
+  height: 100%;
+  margin: 0;
+  background-color: #fff;
+  font-family: 'RobotoDraft', sans-serif;
+}
+
 body /deep/
 {
-  * {
-    font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 16px;
+
+  .game-container
+  {
+    background-color: #3e3e41;
+    margin: 0px;
+    padding: 10px;
+
+    .game
+    {
+      width: 320px;
+      height: 512px;
+      margin: 0px auto;
+      border: 1px solid rgba(0, 0, 0, 0.02);
+      background-color: white;
+    }
+
+    paper-button
+    {
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
   }
 
-  core-toolbar {
-    background-color: #10a4cd;
-    color: #fff;
-    height: 40px;
+  core-header-panel
+  {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 
+    /deep/ paper-button
+    {
+      min-width: 10px;
+      margin: 0px;
 
-    /deep/ .toolbar-tools {
-      height: 40px;
+      /deep/ *
+      {
+        text-transform: none;
+        font-size: medium;
+      }
+
     }
+  }
+
+  core-toolbar
+  {
+    background: #1e8cff;
+    color: #fff;
   }
 }
 
